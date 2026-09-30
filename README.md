@@ -27,6 +27,8 @@ ou presencial.
 **Contato:** [gustavomunix98@gmail.com](mailto:gustavomunix98@gmail.com) ·
 [LinkedIn](https://www.linkedin.com/in/gustavomunix)
 
+**[Baixar o CV em PDF](https://github.com/gustavomunix/cv/releases/latest/download/Gustavo_Muniz_CV.pdf)**
+
 ---
 
 ## O que é este repositório
@@ -64,6 +66,11 @@ enviado, passe o número na hora de renderizar:
 ```bash
 rendercv render Gustavo_Muniz_CV.yaml --cv.phone "+55..."
 ```
+
+A cada push em `main` que altere o YAML, a action
+[`release-pdf.yml`](.github/workflows/release-pdf.yml) renderiza o PDF (sem
+telefone), falha se passar de uma página e publica um release novo. O link de
+download acima sempre aponta para o último.
 
 Durante a edição, o modo watch re-renderiza a cada save:
 
