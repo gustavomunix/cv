@@ -1,0 +1,182 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
+cv:
+  name: Gustavo Muniz
+  headline: Desenvolvedor Full Stack · React, Next.js e Payload CMS · Fundador da Agência Upgrade
+  location: São Paulo, SP
+  email: gustavomunix98@gmail.com
+  website: https://agenciaupgrade.com.br
+  social_networks:
+    - network: LinkedIn
+      username: gustavomunix
+    - network: GitHub
+      username: gustavomunix
+  sections:
+    resumo:
+      - "Desenvolvedor web desde 2018 e tecnólogo em Análise e Desenvolvimento
+        de Sistemas. Construo aplicações em React e Next.js com Payload CMS,
+        sistemas em Laravel e sites em Astro (Cloudflare Workers) e
+        WordPress/Bricks. A base em suporte e infraestrutura me leva a conduzir
+        o projeto inteiro: escopo, arquitetura, código, hospedagem e
+        manutenção. Entrego sites rápidos (100 no PageSpeed, abaixo de 2 s),
+        bem posicionados na busca e que o time do cliente opera sozinho."
+
+    experiência:
+      - company: Multiverso das Letras
+        position: Web Designer Sênior
+        start_date: 2025-07
+        location: São Paulo, SP
+        summary: "Holding editorial e educacional (200+ funcionários). Assumi o
+          ecossistema web do grupo, até então sem responsável técnico: hoje
+          respondo pelas plataformas em React/Next.js e por mais de 20 sites
+          institucionais e de campanha em WordPress."
+        highlights:
+          - "**Plataforma de Leitura:** aplicação em React e Next.js com Payload
+            CMS, acervo em PDF servido do S3 e instalação como PWA."
+          - "**Plataforma de Literatura:** portal em React e Payload CMS que
+            centraliza todos os roteiros de leitura do grupo, antes espalhados
+            entre editoras."
+          - "**Prêmio Multiverso:** site do concurso literário e plataforma de
+            submissões em Laravel, com descaracterização automática das obras
+            para garantir avaliação anônima pelos jurados."
+          - "**Campanha da Fraternidade e Conta de Novo:** landing pages
+            dinâmicas com catálogo por segmento, página de assinatura do clube
+            de livros infantis e captura de leads integrada ao RD Station."
+          - "**Sites editoriais:** Editora Órbita, portal Leitura em Família
+            (Cantinela), hotsite PNLD Literário Equidade (Via Lúdica) e as
+            coleções Clássicos ao Quadrado e Estação Literária, com catálogos
+            dinâmicos (JetEngine, ACF) integrados à loja do grupo."
+
+      - company: Agência Upgrade
+        position: Fundador e Responsável Técnico
+        start_date: 2023-04
+        location: São Paulo, SP
+        summary: Fundei e lidero a agência, que atende empresas com equipe de
+          marketing própria. Conduzo cada projeto do escopo à manutenção
+          contínua e respondo pelas decisões técnicas e comerciais.
+        highlights:
+          - "**[Canopy](https://github.com/Agencia-Upgrade/Canopy) (open
+            source):** criei o boilerplate WordPress da agência: Bedrock, Timber
+            2/Twig, PHPStan, Pint e CI/CD com GitHub Actions, com metas de WCAG
+            2.2 AA e Lighthouse 95+. Na v2, uma skill de agentes de IA versionada
+            no repo garante que o código gerado siga os padrões do tema."
+          - "**Cabekla Distribuidora:** reconstruí o e-commerce B2B do zero,
+            com painel administrativo próprio, preços dinâmicos por cliente sem
+            plugins adicionais e checkout em etapas. Carregamento de 15 s para
+            menos de 2 s; plugins ativos de 43 para 12. Sigo na manutenção, com
+            atualizações semanais automatizadas, monitoramento e reforço de
+            segurança."
+          - "**GW Facilities:** site corporativo com nota 100 no PageSpeed
+            Insights, alcançada dentro de uma hospedagem limitada, sem troca de
+            servidor."
+          - "**Práxis Consultórios:** site de coworking médico com tour 360° de
+            cada sala e agendamento em tempo real."
+          - "**Flow Engenharia:** site em Astro com EmDash CMS, publicado em
+            Cloudflare Workers."
+          - "**Outros projetos:** MOOVE (Peru), migração do site Doutora Luciana
+            de Bricks para Astro estático e manutenção recorrente de clientes
+            como Cantinho do Lar."
+
+      - company: Colégio Machado de Assis
+        position: Coordenador de TI e Analista de Sistemas
+        start_date: 2022-09
+        end_date: 2025-08
+        location: São Paulo, SP
+        summary: Conduzi a transformação digital da instituição, da análise de
+          sistemas à gestão da infraestrutura e do time de TI.
+        highlights:
+          - "Criei o **Machado Food**, sistema proprietário de cantina digital
+            (PDV e aplicativo mobile) com mais de 5.000 usuários, que eliminou o
+            dinheiro físico na cantina e deu aos pais controle do saldo dos
+            filhos."
+          - Desenvolvi o site institucional, implantei servidor NAS de 16 TB
+            com backup automático e compartilhamento seguro de arquivos, e
+            migrei a instituição para Google Workspace, Google Classroom e
+            e-mails institucionais.
+          - Liderei o suporte ao corpo docente e administrativo e conduzi as
+            entrevistas técnicas de contratação de TI.
+
+      - company: Night Sports
+        position: Co-fundador
+        start_date: 2020
+        end_date: 2022
+        location: São Paulo, SP
+        highlights:
+          - Conduzi operação e tecnologia de um e-commerce próprio de
+            streetwear, com checkout personalizado.
+
+    formação:
+      - institution: UNICV - Centro Universitário Cidade Verde
+        area: Análise e Desenvolvimento de Sistemas
+        degree: Tec.
+        start_date: 2022-02
+        end_date: 2024-12
+      - institution: IFSP - Instituto Federal de São Paulo
+        area: Ensino Médio
+        start_date: 2013
+        end_date: 2015
+
+    competências:
+      - label: Aplicações
+        details: React, Next.js, Payload CMS, Astro, EmDash CMS, Tailwind CSS,
+          PHP (Laravel, Timber/Twig), PWA
+      - label: CMS e e-commerce
+        details: WordPress (Bedrock, Composer, WP-CLI), Bricks Builder,
+          Elementor, WooCommerce, JetEngine, ACF, RD Station
+      - label: Infraestrutura e performance
+        details: Cloudflare (Workers, D1, R2, CDN), AWS S3, Docker, GitHub
+          Actions, WP Rocket, SEO técnico, Core Web Vitals, NAS e Google
+          Workspace
+
+    disponibilidade:
+      - CLT, PJ ou freelance · remoto, híbrido ou presencial.
+
+design:
+  theme: classic
+  page:
+    size: a4
+    top_margin: 1.1cm
+    bottom_margin: 1.1cm
+    left_margin: 1.3cm
+    right_margin: 1.3cm
+    show_top_note: false
+    show_footer: false
+  colors:
+    name: rgb(17, 45, 78)
+    headline: rgb(70, 70, 70)
+    connections: rgb(40, 40, 40)
+    section_titles: rgb(17, 45, 78)
+    links: rgb(17, 45, 78)
+  typography:
+    line_spacing: 0.48em
+    font_size:
+      body: 9pt
+      name: 24pt
+      headline: 9.5pt
+      connections: 8.5pt
+      section_titles: 1.2em
+  header:
+    space_below_name: 0.25cm
+    space_below_headline: 0.3cm
+    space_below_connections: 0.35cm
+    connections:
+      separator: "·"
+      space_between_connections: 0.3cm
+  section_titles:
+    type: with_full_line
+    space_above: 0.38cm
+    space_below: 0.22cm
+  sections:
+    space_between_regular_entries: 0.8em
+    space_between_text_based_entries: 0.2em
+    show_time_spans_in: []
+  entries:
+    date_and_location_width: 3.4cm
+    short_second_row: false
+    summary:
+      space_above: 0.08cm
+    highlights:
+      space_above: 0.08cm
+      space_between_items: 0.06cm
+
+locale:
+  language: portuguese
