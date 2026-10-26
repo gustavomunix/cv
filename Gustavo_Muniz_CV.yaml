@@ -22,8 +22,8 @@ cv:
 
     experiência:
       - company: Multiverso das Letras
-        position: Web Designer Sênior
-        start_date: 2025-07
+        position: Desenvolvedor Web
+        start_date: 2025-06
         location: São Paulo, SP
         summary: "Holding editorial e educacional (200+ funcionários). Assumi o
           ecossistema web do grupo, até então sem responsável técnico: hoje
@@ -35,9 +35,9 @@ cv:
           - "**Plataforma de Literatura:** portal em React e Payload CMS que
             centraliza todos os roteiros de leitura do grupo, antes espalhados
             entre editoras."
-          - "**Prêmio Multiverso:** site do concurso literário e plataforma de
-            submissões em Laravel, com descaracterização automática das obras
-            para garantir avaliação anônima pelos jurados."
+          - "**Prêmio Multiverso:** site em WordPress com Bricks e portal de
+            submissões em Laravel com Filament, com descaracterização automática
+            das obras para avaliação anônima."
           - "**Campanha da Fraternidade e Conta de Novo:** landing pages
             dinâmicas com catálogo por segmento, página de assinatura do clube
             de livros infantis e captura de leads integrada ao RD Station."
@@ -111,7 +111,7 @@ cv:
         start_date: 2022-02
         end_date: 2024-12
       - institution: IFSP - Instituto Federal de São Paulo
-        area: Ensino Médio
+        area: Ensino Médio Regular
         start_date: 2013
         end_date: 2015
 
