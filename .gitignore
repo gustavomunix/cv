@@ -1,0 +1,21 @@
+.DS_Store
+rendercv_output/
+.media/
+docs/briefing.md
+docs/specs/content.md
+docs/prompts/
+AGENTS.md
+.agents/
+.claude/
+.grok/
+skills-lock.json
+vagas/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# Ambiente local
+.env
+.env.local

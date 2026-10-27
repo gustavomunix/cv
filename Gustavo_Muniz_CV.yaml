@@ -1,0 +1,172 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
+cv:
+  name: Gustavo Muniz
+  headline: Desenvolvedor Full Stack · React, Next.js e TypeScript · PHP/Laravel · WordPress
+  location: São Paulo, SP
+  email: gustavomunix98@gmail.com
+  social_networks:
+    - network: LinkedIn
+      username: gustavomunix
+    - network: GitHub
+      username: gustavomunix
+  sections:
+    resumo:
+      - "Desenvolvedor full stack desde 2018, tecnólogo em Análise e
+        Desenvolvimento de Sistemas. Na Multiverso das Letras, respondo pelas
+        plataformas React/Next.js com Payload CMS, pelo portal do Prêmio em
+        Laravel e por mais de 20 sites WordPress. Em 2023 fundei a Agência
+        Upgrade, onde faço sites em Astro na Cloudflare e mantenho o Canopy,
+        boilerplate WordPress open source. Na Cabekla, cliente da agência, a
+        equipe passou a atualizar o e-commerce sozinha no primeiro dia após o
+        treinamento. Disponível para CLT ou PJ, remoto, híbrido ou presencial."
+
+    experiência:
+      - company: Multiverso das Letras
+        position: Desenvolvedor Web
+        start_date: 2025-06
+        location: São Paulo, SP
+        summary: "Grupo editorial e educacional com mais de 200 funcionários.
+          Concluí 415 tickets no Jira."
+        highlights:
+          - "**Plataformas:** a de leitura serve o acervo em PDF pelo S3 e instala
+            como PWA; a de literatura centraliza os roteiros de leitura do grupo.
+            As duas usam React, Next.js e Payload CMS, com design system e
+            acessibilidade WCAG 2.1 AA."
+          - "**Portal de projetos:** mapa por estado e município. Front-end em
+            Next.js 16, React 19 e TypeScript, com Apollo consumindo o GraphQL do
+            backoffice em Payload CMS."
+          - "**Prêmio Multiverso:** portal de submissões que descaracteriza as
+            obras para avaliação anônima, feito em Laravel com Filament. O site
+            do prêmio usa WordPress e Bricks."
+          - "**Sites do grupo:** mais de 20 sites institucionais e de campanha em
+            WordPress com Bricks, JetEngine e ACF. Mantenho o SEO técnico e a
+            medição com GTM, GA4 e Plausible."
+
+      - company: Agência Upgrade
+        position: Fundador e Responsável Técnico
+        start_date: 2023-04
+        location: São Paulo, SP
+        summary: Agência de marketing e tecnologia para empresas que têm time de
+          marketing próprio.
+        highlights:
+          - "**Cabekla Distribuidora:** reconstruí o e-commerce B2B sobre o
+            Canopy, com WooCommerce, painel administrativo próprio, preços por
+            perfil de cliente sem plugins e checkout em etapas. Mantive a
+            hospedagem PHP padrão em vez de exigir VPS. Sigo na manutenção, com
+            atualizações semanais, monitoramento e segurança."
+          - "**[Canopy](https://github.com/Agencia-Upgrade/Canopy) (open source,
+            MIT):** boilerplate WordPress code-first, sem page builder. Bedrock,
+            Timber 2, CSS nativo em um arquivo e JS em ilhas. PHPStan, Pint, CI/CD
+            e metas de WCAG 2.2 AA e Lighthouse 95+. Em produção na Cabekla."
+          - "**Upgrade Tools e IA:** hub interno de ferramentas com IA em Astro,
+            React e EmDash na Cloudflare, com login por passkey e provedores
+            OpenAI-compatible. Coordeno os agentes de IA da agência, da
+            prospecção ao conteúdo."
+          - "**Grove:** SaaS de conteúdo e SEO para WordPress em Next.js 16 e
+            TypeScript, sobre Cloudflare Workers com D1, KV, Queues, Drizzle e
+            Auth.js v5. Fase 1 concluída."
+
+      - company: Colégio Machado de Assis
+        position: Coordenador de TI
+        start_date: 2022-09
+        end_date: 2025-08
+        location: São Paulo, SP
+        summary: "Infraestrutura, sistemas e entrevistas técnicas de TI. CLT no
+          primeiro ano, freelance depois."
+        highlights:
+          - "**Machado Food:** criei o sistema de cantina com PDV e aplicativo,
+            usado por mais de 5 mil pessoas. Acabou com o dinheiro físico e deu aos
+            pais controle do saldo."
+          - "**Outras entregas:** site institucional, NAS de 16 TB com backup e
+            migração para Google Workspace e Classroom."
+
+      - company: Night Sports
+        position: Co-fundador
+        start_date: 2020
+        end_date: 2022
+        location: São Paulo, SP
+        summary: E-commerce próprio de streetwear.
+        highlights:
+          - Conduzi a operação e a tecnologia da loja, com checkout personalizado.
+
+    projetos:
+      - "**Nerava Player e Talune (Rust):** player de mídia local para Windows 11
+        em WinUI 3, com SQLite e FLAC bit-perfect, e cliente de streaming de
+        música com OAuth PKCE e decode FLAC via Symphonia. Os dois tocam em
+        WASAPI exclusivo."
+
+    formação:
+      - institution: UNICV - Centro Universitário Cidade Verde
+        area: Análise e Desenvolvimento de Sistemas
+        degree: Tecnólogo
+        start_date: 2022-02
+        end_date: 2024-12
+
+    competências:
+      - label: Aplicações
+        details: TypeScript, JavaScript, React, Next.js, Payload CMS, Apollo,
+          Astro, Tailwind CSS, shadcn/ui, PWA
+      - label: Back-end e CMS
+        details: PHP (Laravel, Filament, Timber/Twig), MySQL, Drizzle, APIs REST e
+          GraphQL, WordPress (Bedrock, Composer, WP-CLI, plugins e tema próprio),
+          Bricks Builder, WooCommerce, JetEngine, ACF
+      - label: Infraestrutura e qualidade
+        details: Cloudflare (Workers, D1, R2, KV, Queues, CDN), AWS S3, Docker,
+          GitHub Actions, CI/CD, SEO técnico, GTM, GA4, Core Web Vitals, WCAG
+      - label: Idiomas
+        details: Português nativo; inglês intermediário com leitura técnica
+          avançada.
+
+design:
+  theme: classic
+  page:
+    size: a4
+    top_margin: 1.1cm
+    bottom_margin: 1.1cm
+    left_margin: 1.3cm
+    right_margin: 1.3cm
+    show_top_note: false
+    show_footer: false
+  colors:
+    name: rgb(17, 45, 78)
+    headline: rgb(70, 70, 70)
+    connections: rgb(40, 40, 40)
+    section_titles: rgb(17, 45, 78)
+    links: rgb(17, 45, 78)
+  typography:
+    line_spacing: 0.6em
+    alignment: justified-with-no-hyphenation
+    font_size:
+      body: 10pt
+      name: 24pt
+      headline: 9.5pt
+      connections: 8.5pt
+      section_titles: 1.2em
+  header:
+    space_below_name: 0.25cm
+    space_below_headline: 0.3cm
+    space_below_connections: 0.35cm
+    connections:
+      separator: "·"
+      space_between_connections: 0.3cm
+      display_urls_instead_of_usernames: true
+  section_titles:
+    type: with_full_line
+    space_above: 0.38cm
+    space_below: 0.22cm
+  sections:
+    space_between_regular_entries: 0.8em
+    space_between_text_based_entries: 0.2em
+    show_time_spans_in: []
+  entries:
+    date_and_location_width: 3.4cm
+    degree_width: 1.6cm
+    short_second_row: false
+    summary:
+      space_above: 0.08cm
+    highlights:
+      space_above: 0.08cm
+      space_between_items: 0.06cm
+
+locale:
+  language: portuguese
