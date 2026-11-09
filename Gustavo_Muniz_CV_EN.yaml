@@ -1,0 +1,185 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
+# English version of Gustavo_Muniz_CV.yaml. Same facts, dates, numbers, and links.
+cv:
+  name: Gustavo Muniz
+  headline: Full Stack Developer · React, Next.js, and TypeScript · PHP/Laravel · WordPress
+  location: São Paulo, SP
+  email: gustavomunix98@gmail.com
+  social_networks:
+    - network: LinkedIn
+      username: gustavomunix
+    - network: GitHub
+      username: gustavomunix
+  sections:
+    summary:
+      - "Full stack developer since 2018, technologist in Systems Analysis and
+        Development. At Multiverso das Letras, I am responsible for the
+        React/Next.js platforms with Payload CMS, the Prêmio portal in Laravel,
+        and more than 20 WordPress sites. In 2023 I founded Agência Upgrade,
+        where I build Astro sites on Cloudflare and maintain Canopy, an
+        open-source WordPress boilerplate. At Cabekla, an agency client, the
+        team started updating the e-commerce store on their own the day after
+        training. Open to full-time employment (CLT) or contractor (PJ) roles,
+        remote, hybrid or on-site in São Paulo."
+
+    experience:
+      - company: Multiverso das Letras
+        position: Web Developer
+        start_date: 2025-06
+        location: São Paulo, SP
+        summary: "Publishing and education group with more than 200 employees.
+          I completed 415 Jira tickets."
+        highlights:
+          - "**Platforms:** the reading platform serves the PDF collection
+            through S3 and installs as a PWA; the literature platform
+            centralizes the group's reading guides. Both use React, Next.js,
+            and Payload CMS, with a design system and WCAG 2.1 AA
+            accessibility."
+          - "**Projects portal:** map by state and municipality. Front-end in
+            Next.js 16, React 19, and TypeScript, with Apollo consuming GraphQL
+            from the Payload CMS back office."
+          - "**Prêmio Multiverso:** submissions portal that strips identifying
+            details from works for anonymous review, built with Laravel and
+            Filament. The award site uses WordPress and Bricks."
+          - "**Group sites:** more than 20 institutional and campaign sites on
+            WordPress with Bricks, JetEngine, and ACF. I maintain technical SEO
+            and measurement with GTM, GA4, and Plausible."
+
+      - company: Agência Upgrade
+        position: Founder and Technical Lead
+        start_date: 2023-04
+        location: São Paulo, SP
+        summary: Marketing and technology agency for companies that have their
+          own marketing team.
+        highlights:
+          - "**Cabekla Distribuidora:** rebuilt the B2B e-commerce store on
+            Canopy, with WooCommerce, a custom admin panel, pricing by customer
+            profile without plugins, and a multi-step checkout. Kept standard
+            PHP hosting instead of requiring a VPS. I still handle maintenance,
+            with weekly updates, monitoring, and security."
+          - "**[Canopy](https://github.com/Agencia-Upgrade/Canopy) (open source,
+            MIT):** code-first WordPress boilerplate, without a page builder.
+            Bedrock, Timber 2, native CSS in one file, and JS in islands.
+            PHPStan, Pint, CI/CD, and targets of WCAG 2.2 AA and Lighthouse
+            95+. In production at Cabekla."
+          - "**Upgrade Tools and AI:** internal hub of AI tools in Astro, React,
+            and EmDash on Cloudflare, with passkey login and OpenAI-compatible
+            providers. I coordinate the agency's AI agents, from prospecting to
+            content."
+          - "**Grove:** content and SEO SaaS for WordPress in Next.js 16 and
+            TypeScript, on Cloudflare Workers with D1, KV, Queues, Drizzle, and
+            Auth.js v5. Phase 1 complete."
+
+      - company: Colégio Machado de Assis
+        position: IT Coordinator
+        start_date: 2022-09
+        end_date: 2025-08
+        location: São Paulo, SP
+        summary: "Infrastructure, systems, and technical IT interviews. CLT the
+          first year, freelance after."
+        highlights:
+          - "**Machado Food:** built the cafeteria system with a POS and an app,
+            used by more than 5,000 people. It eliminated cash and gave parents
+            control of the balance."
+          - "**Other deliverables:** institutional website, a 16 TB NAS with
+            backup, and migration to Google Workspace and Classroom."
+
+      - company: Night Sports
+        position: Co-founder
+        start_date: 2020
+        end_date: 2022
+        location: São Paulo, SP
+        summary: Own streetwear e-commerce store.
+        highlights:
+          - Led the store's operations and technology, with a custom checkout.
+
+    projects:
+      - "**Nerava Player and Talune (Rust):** local media player for Windows 11
+        in WinUI 3, with SQLite and bit-perfect FLAC, and a music streaming
+        client with OAuth PKCE and FLAC decoding via Symphonia. Both play in
+        exclusive WASAPI."
+
+    education:
+      - institution: UNICV - Centro Universitário Cidade Verde
+        area: Systems Analysis and Development
+        degree: Technologist
+        start_date: 2022-02
+        end_date: 2024-12
+
+    skills:
+      - label: Applications
+        details: TypeScript, JavaScript, React, Next.js, Payload CMS, Apollo,
+          Astro, Tailwind CSS, shadcn/ui, PWA
+      - label: Back-end and CMS
+        details: PHP (Laravel, Filament, Timber/Twig), MySQL, Drizzle, REST and
+          GraphQL APIs, WordPress (Bedrock, Composer, WP-CLI, own plugins and
+          theme), Bricks Builder, WooCommerce, JetEngine, ACF
+      - label: Infrastructure and quality
+        details: Cloudflare (Workers, D1, R2, KV, Queues, CDN), AWS S3, Docker,
+          GitHub Actions, CI/CD, technical SEO, GTM, GA4, Core Web Vitals, WCAG
+      - label: Languages
+        details: Native Portuguese; intermediate English with advanced technical
+          reading.
+
+design:
+  theme: classic
+  page:
+    size: a4
+    top_margin: 1.1cm
+    bottom_margin: 1.1cm
+    left_margin: 1.3cm
+    right_margin: 1.3cm
+    show_top_note: false
+    show_footer: false
+  colors:
+    name: rgb(17, 45, 78)
+    headline: rgb(70, 70, 70)
+    connections: rgb(40, 40, 40)
+    section_titles: rgb(17, 45, 78)
+    links: rgb(17, 45, 78)
+  typography:
+    line_spacing: 0.6em
+    alignment: justified-with-no-hyphenation
+    font_size:
+      body: 10pt
+      name: 24pt
+      headline: 9.5pt
+      connections: 8.5pt
+      section_titles: 1.2em
+  header:
+    space_below_name: 0.25cm
+    space_below_headline: 0.3cm
+    space_below_connections: 0.35cm
+    connections:
+      separator: "·"
+      space_between_connections: 0.3cm
+      display_urls_instead_of_usernames: true
+  section_titles:
+    type: with_full_line
+    space_above: 0.38cm
+    space_below: 0.22cm
+  sections:
+    space_between_regular_entries: 0.8em
+    space_between_text_based_entries: 0.2em
+    show_time_spans_in: []
+  entries:
+    date_and_location_width: 3.4cm
+    # Mais largo que no CV em português, para "Technologist" não encostar na instituição.
+    degree_width: 2.05cm
+    short_second_row: false
+    summary:
+      space_above: 0.08cm
+    highlights:
+      space_above: 0.08cm
+      space_between_items: 0.06cm
+
+locale:
+  language: english
+
+settings:
+  render_command:
+    pdf_path: OUTPUT_FOLDER/Gustavo_Muniz_CV_EN.pdf
+    png_path: OUTPUT_FOLDER/Gustavo_Muniz_CV_EN.png
+    typst_path: OUTPUT_FOLDER/Gustavo_Muniz_CV_EN.typ
+    markdown_path: OUTPUT_FOLDER/Gustavo_Muniz_CV_EN.md
+    html_path: OUTPUT_FOLDER/Gustavo_Muniz_CV_EN.html

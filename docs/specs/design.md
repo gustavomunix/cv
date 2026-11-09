@@ -61,7 +61,7 @@ forte vem primeiro.
 - O resumo ocupa no máximo 6 linhas.
 - Cada experiência tem no máximo 4 bullets, exceto a atual.
 - Competências em no máximo 4 entradas.
-- Se o render gerar `Gustavo_Muniz_CV_2.png`, a mudança não passou.
+- Se o render gerar `Gustavo_Muniz_CV_2.png` ou `Gustavo_Muniz_CV_EN_2.png`, a mudança não passou. Os dois arquivos cabem em uma página.
 
 ## ATS
 
@@ -75,7 +75,7 @@ forte vem primeiro.
 
 ## Verificação visual
 
-1. Abrir `rendercv_output/Gustavo_Muniz_CV_1.png`.
+1. Abrir `rendercv_output/Gustavo_Muniz_CV_1.png` e `rendercv_output/Gustavo_Muniz_CV_EN_1.png`.
 2. Conferir se nenhum bullet quebrou em duas colunas.
 3. Conferir se nenhuma linha ficou órfã no fim de uma seção.
 4. Conferir se o header não tem conexão solta.

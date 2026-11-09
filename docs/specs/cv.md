@@ -14,10 +14,27 @@ que leve a entrevista, não uma peça de portfólio.
 ## Fora de escopo
 
 - Site da agência, portfólio e apresentações comerciais.
-- Versão em inglês. Quando existir, será um arquivo separado.
 - Pretensão salarial e telefone no repositório público. O telefone entra só na
   hora de renderizar o PDF de envio.
 - Vaga focada em mobile.
+- Fato que exista só na versão em inglês. Os dois YAMLs contam a mesma coisa.
+
+## Versão em inglês
+
+Arquivo separado: `Gustavo_Muniz_CV_EN.yaml`. Traduz o YAML em português. Não
+acrescenta cliente, número, data, cargo, tecnologia ou link.
+
+- `locale.language` é `english`, para meses e "present" saírem em inglês.
+- Chaves de seção em inglês: `summary`, `experience`, `projects`, `education`,
+  `skills`.
+- `degree_width` fica maior que no arquivo em português para "Technologist"
+  não encostar no nome da instituição. O resto do design é o mesmo.
+- Os caminhos de saída usam o nome `Gustavo_Muniz_CV_EN`, para o render não
+  sobrescrever o PDF em português.
+- Nomes próprios ficam como no original: Multiverso das Letras, Agência
+  Upgrade, Prêmio Multiverso, Canopy, Cabekla, UNICV e os demais.
+- A Multiverso das Letras não é cliente da Agência Upgrade.
+- Mudou um fato num arquivo, atualize o outro no mesmo commit.
 
 ## Premissas
 
@@ -31,7 +48,7 @@ que leve a entrevista, não uma peça de portfólio.
 ## Stack
 
 - RenderCV 2.8 com Typst.
-- Tema `classic`, locale `portuguese`.
+- Tema `classic`. Locale `portuguese` no YAML principal e `english` no YAML em inglês.
 - Python 3.12 ou superior apenas para o RenderCV.
 
 ## Comandos
@@ -42,21 +59,25 @@ pipx install "rendercv[full]"
 
 # Renderizar
 rendercv render Gustavo_Muniz_CV.yaml
+rendercv render Gustavo_Muniz_CV_EN.yaml
 
 # Re-renderizar a cada save
 rendercv render Gustavo_Muniz_CV.yaml --watch
 
 # Gerar o PDF de envio com telefone
 rendercv render Gustavo_Muniz_CV.yaml --cv.phone "+55..."
+rendercv render Gustavo_Muniz_CV_EN.yaml --cv.phone "+55..."
 
 # Conferir se ficou em uma página
 mdls -name kMDItemNumberOfPages rendercv_output/Gustavo_Muniz_CV.pdf
+mdls -name kMDItemNumberOfPages rendercv_output/Gustavo_Muniz_CV_EN.pdf
 ```
 
 ## Estrutura do projeto
 
 ```
-Gustavo_Muniz_CV.yaml     conteúdo e design do CV
+Gustavo_Muniz_CV.yaml     conteúdo e design do CV em português
+Gustavo_Muniz_CV_EN.yaml  os mesmos fatos, em inglês
 docs/specs/               regras editoriais e de design
 docs/decisions/           decisões que não mudam com frequência
 rendercv_output/          saída do render, ignorada pelo git
@@ -65,8 +86,10 @@ vagas/                    variantes por vaga, ignoradas pelo git
 
 ## Estilo do YAML
 
-- Chaves de seção em português: `resumo`, `experiência`, `projetos`,
-  `formação`, `competências`.
+- No YAML em português, chaves de seção em português: `resumo`, `experiência`,
+  `projetos`, `formação`, `competências`.
+- No YAML em inglês, chaves de seção em inglês: `summary`, `experience`,
+  `projects`, `education`, `skills`.
 - Datas em `YYYY-MM` ou `YYYY`. Não misture formatos dentro da mesma entrada.
 - Dois-pontos em texto livre exige aspas no valor.
 - Nunca use ` - ` no meio de um highlight. O RenderCV trata o hífen cercado de
@@ -98,9 +121,10 @@ A fonte de verdade é [`design.md`](design.md). Em resumo:
 
 Antes de considerar a mudança pronta:
 
-1. `rendercv render` termina sem erro.
-2. Existe apenas `Gustavo_Muniz_CV_1.png` em `rendercv_output/`.
-3. `mdls` informa `kMDItemNumberOfPages = 1`.
+1. `rendercv render` termina sem erro nos dois YAMLs.
+2. Existem `Gustavo_Muniz_CV_1.png` e `Gustavo_Muniz_CV_EN_1.png`, e nenhum
+   `*_2.png`, em `rendercv_output/`.
+3. `mdls` informa `kMDItemNumberOfPages = 1` nos dois PDFs.
 4. O texto não contém termo da lista proibida da spec de conteúdo.
 5. Cargo, datas, clientes e números batem com a spec de conteúdo.
 6. O PNG foi conferido visualmente: sem linha órfã, sem bullet partido, sem
@@ -112,7 +136,8 @@ Antes de considerar a mudança pronta:
 **Sempre:**
 
 - Atualizar a spec antes de mudar um fato.
-- Rodar o render e conferir a página.
+- Atualizar os dois YAMLs quando um fato mudar.
+- Rodar o render e conferir a página dos dois PDFs.
 - Manter o tom definido na spec de conteúdo.
 - Preservar nomes de tecnologia e caminhos.
 

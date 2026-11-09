@@ -18,7 +18,7 @@ mão torna diff, revisão e versão por vaga impossíveis.
 
 Manter o conteúdo e o design em um único YAML versionado, renderizado pelo
 RenderCV com Typst. O PDF é artefato de build, não fonte. A saída fica em
-`rendercv_output/`, ignorada pelo git. O release publica o PDF mais recente.
+`rendercv_output/`, ignorada pelo git. O release publica os PDFs mais recentes.
 
 ## Alternativas consideradas
 
@@ -46,3 +46,4 @@ RenderCV com Typst. O PDF é artefato de build, não fonte. A saída fica em
 - O PDF é reconstruível a qualquer momento.
 - A página é o limite rígido: conteúdo novo exige corte.
 - O repositório pode ser público sem telefone nem pretensão salarial.
+- A versão em inglês é outro YAML (`Gustavo_Muniz_CV_EN.yaml`), com os mesmos fatos. O release publica os dois PDFs.

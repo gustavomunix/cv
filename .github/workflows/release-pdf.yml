@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - Gustavo_Muniz_CV.yaml
+      - Gustavo_Muniz_CV_EN.yaml
       - .github/workflows/release-pdf.yml
   workflow_dispatch:
 
@@ -33,12 +34,20 @@ jobs:
         run: pip install "rendercv[full]==2.8"
 
       - name: Render
-        run: rendercv render Gustavo_Muniz_CV.yaml --dont-generate-html --dont-generate-markdown
+        run: |
+          # Portuguese first. Its PNG cleanup matches Gustavo_Muniz_CV_*.png and
+          # would remove Gustavo_Muniz_CV_EN_*.png if it ran second.
+          rendercv render Gustavo_Muniz_CV.yaml --dont-generate-html --dont-generate-markdown
+          rendercv render Gustavo_Muniz_CV_EN.yaml --dont-generate-html --dont-generate-markdown
 
       - name: Ensure single page
         run: |
-          if [ -e rendercv_output/Gustavo_Muniz_CV_2.png ]; then
-            echo "::error::CV passou de uma página A4"
+          if [ ! -e rendercv_output/Gustavo_Muniz_CV_1.png ] || [ -e rendercv_output/Gustavo_Muniz_CV_2.png ]; then
+            echo "::error::CV em português passou de uma página A4"
+            exit 1
+          fi
+          if [ ! -e rendercv_output/Gustavo_Muniz_CV_EN_1.png ] || [ -e rendercv_output/Gustavo_Muniz_CV_EN_2.png ]; then
+            echo "::error::CV em inglês passou de uma página A4"
             exit 1
           fi
 
@@ -47,9 +56,11 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           tag="cv-$(date -u +%Y-%m-%d)-${GITHUB_RUN_NUMBER}"
-          gh release create "$tag" rendercv_output/Gustavo_Muniz_CV.pdf \
+          gh release create "$tag" \
+            rendercv_output/Gustavo_Muniz_CV.pdf \
+            rendercv_output/Gustavo_Muniz_CV_EN.pdf \
             --repo "$GITHUB_REPOSITORY" \
             --target "$GITHUB_SHA" \
             --title "CV $(date -u +%d/%m/%Y)" \
-            --notes "PDF gerado a partir de ${GITHUB_SHA::7}." \
+            --notes "PDFs em português e inglês gerados a partir de ${GITHUB_SHA::7}." \
             --latest
